@@ -1,4 +1,4 @@
-# WhichMovie
+# WhichMedia
 
 A modern, responsive React application for searching movies, TV shows and games using the OMDB API. This application showcases modern React patterns with TypeScript, context-based state management, and robust error handling.
 
