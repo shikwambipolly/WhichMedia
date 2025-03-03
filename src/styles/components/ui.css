@@ -1,0 +1,38 @@
+/* Loading indicator styles */
+.loading-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: var(--field-key-color);
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  animation: pulse 1.5s infinite;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Error message styles */
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: var(--button-bg);
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--button-bg);
+}
+
+@media (max-width: 640px) {
+  .loading-message, .error-message {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+} 
