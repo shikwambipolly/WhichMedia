@@ -207,6 +207,8 @@
   color: var(--field-key-color);
   display: block;
   margin-top: 5px;
+  margin-left: 4px;
+  margin-bottom: 4px;
 }
 
 .all-results-note {

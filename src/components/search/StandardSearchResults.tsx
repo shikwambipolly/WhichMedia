@@ -170,8 +170,11 @@ const SearchResults = ({ title, fetchAllPages, filters, setFetchAllPages }: Sear
                     )
                 ) : (
                     totalPages > 1 && (
+                        <>
                         <div className="limited-results-note">
                             Showing page {currentPage} of {totalPages}
+                        </div>
+                        <div className="limited-results-note">
                             <button 
                                 className="load-all-prompt"
                                 onClick={handleLoadAllResults}
@@ -180,6 +183,7 @@ const SearchResults = ({ title, fetchAllPages, filters, setFetchAllPages }: Sear
                                 {isLoadingAll ? 'Loading all results...' : 'Load all results'}
                             </button>
                         </div>
+                        </>
                     )
                 )}
                 
