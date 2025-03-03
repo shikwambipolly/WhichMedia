@@ -124,7 +124,7 @@ The application includes a robust error handling system:
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/whichmovie.git
+git clone https://github.com/shikwambipolly/whichmovie.git
 cd whichmovie
 ```
 
