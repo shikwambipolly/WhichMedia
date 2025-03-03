@@ -6,7 +6,7 @@ import { SearchResultsProps, SearchFilters } from '../../types/component.types';
 import LoadingMessage from '../ui/LoadingMessage';
 import ErrorMessage from '../ui/ErrorMessage';
 import MovieGrid from './MovieGrid';
-import Pagination from './Pagination';
+//import Pagination from './Pagination';
 
 /**
  * SearchResults component for displaying search results
@@ -131,7 +131,7 @@ const SearchResults = ({ title, fetchAllPages, filters, setFetchAllPages }: Sear
     }
     
     // Function for pagination
-    const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+    //const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
     
     // Get a description of current filters
     const getFilterDescription = () => {
@@ -195,14 +195,14 @@ const SearchResults = ({ title, fetchAllPages, filters, setFetchAllPages }: Sear
                 
                 <MovieGrid movies={allMovies} />
                 
-                {fetchAllPages && totalPages > 1 && (
+                {/* {fetchAllPages && totalPages > 1 && (
                     <Pagination
                         currentPage={currentPage}
                         totalPages={totalPages}
                         totalItems={totalResults}
                         paginate={paginate}
                     />
-                )}
+                )} */}
             </div>
         </div>
     );
