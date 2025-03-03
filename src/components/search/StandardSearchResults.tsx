@@ -195,7 +195,7 @@ const SearchResults = ({ title, fetchAllPages, filters, setFetchAllPages }: Sear
                 
                 <MovieGrid movies={allMovies} />
                 
-                {!fetchAllPages && totalPages > 1 && (
+                {fetchAllPages && totalPages > 1 && (
                     <Pagination
                         currentPage={currentPage}
                         totalPages={totalPages}
